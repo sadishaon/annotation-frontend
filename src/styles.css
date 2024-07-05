@@ -1,0 +1,862 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.pt-6 {
+  padding-top: 3em;
+}
+
+/* Questionair CSS */
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom checkbox appearance */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 6px;
+  /* background-color only for content */
+  border: 0.5px solid #bbbbbb;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+input:checked {
+  background-color: #0d6efd !important;
+}
+
+input {
+  transform: translateY(3px);
+  width: 100px;
+  margin-left: 10px;
+}
+a.tip {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+}
+a.tip:hover {
+  cursor: help;
+  position: relative;
+}
+a.tip span {
+  display: none;
+}
+a.tip:hover span {
+  border: #c0c0c0 1px dotted;
+  padding: 5px 20px 5px 5px;
+  font-size: 25px;
+  color: #fff;
+  background-color: #0f80d6;
+  display: block;
+  z-index: 100;
+  left: 0px;
+  margin: 10px;
+  width: 880px;
+  position: absolute;
+  top: 10px;
+  text-decoration: none;
+}
+
+/* Region-list Css */
+.regions-list {
+  display: flex;
+}
+
+.region {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px grey;
+  display: flex;
+}
+
+.region button {
+  float: right;
+}
+
+.Task-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper {
+  height: 90vh;
+}
+
+/* Canvas Css */
+.canvas {
+  box-shadow: 0 0 5px grey;
+  width: 100%;
+  height: 100%;
+}
+
+/*Tutorial Css */
+.tutorial {
+  display: none;
+  cursor: pointer;
+}
+.tt {
+  position: absolute;
+  background: #fafafa;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.17);
+  width: 100%;
+  height: 80vh;
+  top: 0%;
+  right: 0%;
+  z-index: 5;
+  cursor: pointer;
+  border-radius: 20px;
+
+  transition: all 1.5s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.zoom-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px;
+}
+
+.step-circle {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #00adb5;
+}
+.step-circle img {
+  margin-top: 19px;
+}
+/*Description CSS */
+.body {
+  height: 100vh;
+}
+.Description-list img {
+  width: 60px;
+}
+
+.description {
+  text-align: center;
+}
+
+/*******Training Buttons ***/
+.previous {
+  background-color: #cfd7de;
+  color: rgb(83, 81, 81);
+  border: none;
+  padding: 8px 16px;
+
+  font-size: 18px;
+  font-weight: 700px;
+  border-radius: 2px;
+  filter: drop-shadow(0px 0px 10px rgba(120, 115, 115, 0.3));
+}
+.previous:active {
+  background-color: #0f80d6;
+}
+
+.next {
+  background-color: #cfd7de;
+  color: rgb(83, 81, 81);
+  border: none;
+  padding: 8px 16px;
+
+  font-size: 18px;
+  font-weight: 700px;
+  border-radius: 2px;
+  filter: drop-shadow(0px 0px 10px rgba(120, 115, 115, 0.3));
+}
+.next:hover:enabled {
+  background-color: #0f80d6;
+  color: white;
+}
+/* Test CSS*/
+.header {
+  text-align: center;
+}
+.test-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  flex: 20%;
+}
+
+.footer {
+  flex: -1%;
+  display: flex;
+  justify-content: center;
+}
+.card-img-size {
+  width: 100%;
+  height: 80% !important;
+}
+.group-item {
+  list-style-type: circle !important;
+}
+.img-container {
+  width: 100%;
+  height: 80vh;
+  background-color: #00adb5;
+}
+.failure {
+  color: purple;
+  height: 4px;
+}
+
+/*Payment Css   */
+
+.payment-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.payment-box {
+  margin: 0 auto;
+  width: 964px;
+  height: 70px;
+  background: #fafafa;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.17);
+  border-radius: 100px;
+  margin-top: 6rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 450px) {
+  .card {
+    height: 1200px !important;
+  }
+  .col-sm-6 {
+    margin-bottom: 40px !important;
+  }
+  /*Questionair CSS */
+  .form-container {
+    font-size: 16px;
+  }
+  legend {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  /*Description CSS */
+  .body {
+    height: 120vh;
+  }
+
+  .main-container h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 15px;
+  }
+  .Description-list img {
+    width: 40px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial */
+  .tutorial-container .col-lgl-6 {
+    width: 95% !important;
+    height: 320px;
+  }
+  .tutorial-container h1 {
+    font-size:1rem;
+  }
+  .tutorial-container p {
+    font-size:12px;
+  }
+
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-col .next {
+    width: 32%;
+    font-size: 12px;
+  }
+  .btn-col .previous {
+    font-size: 12px;
+  }
+  /*Test CSS*/
+  .header h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .header h5 {
+    font-size: 0.6rem;
+  }
+  .header img {
+    width: 30px;
+  }
+  .test-container {
+    height: 122vh;
+  }
+  .btn-col .next,.previous {
+    font-size:12px;
+  }
+  /*Task CSS*/
+  .wrapper h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .wrapper h5 {
+    font-size: 0.6rem;
+  }
+  .wrapper img {
+    width: 25px;
+  }
+  .wrapper p {
+    width:85px !important;
+  }
+  .wrapper .next,.previous {
+    font-size:12px;
+  }
+  .regions-list .region {
+    font-size:8px;
+  }
+  .regions-list button {
+    border: none;
+    background: #FCFCFC;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color:black;
+    font-size: 8px;
+    margin-left: 5px;
+
+  }
+  /*Payment CSS */
+  .payment-container h2 {
+    font-size: 0.8rem;
+  }
+  .payment-container h2 .mt-5 {
+    margin-top: 1rem !important;
+  }
+  .payment-box {
+    width: 90%;
+    height: 75px;
+  }
+  .payment-box h6 {
+    font-size: 0.4rem;
+  }
+}
+
+
+
+/*Mobile devices (Iphone,Samsung)*/
+@media (min-width:476px) and (max-width: 576px) {
+  .card {
+    height: 1200px !important;
+  }
+  .col-sm-6 {
+    margin-bottom: 40px !important;
+  }
+  /*Questionair CSS */
+  .form-container {
+    font-size: 16px;
+  }
+  legend {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  /*Description CSS */
+  .body {
+    height: 110vh;
+  }
+
+  .main-container h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 15px;
+  }
+  .Description-list img {
+    width: 40px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial */
+  .tutorial-container .col-lgl-6 {
+    width: 95% !important;
+    height: 400px;
+  }
+  .tutorial-container h1 {
+    font-size:1.2rem;
+  }
+  .tutorial-container p {
+    font-size:12px;
+  }
+
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-col .next,.previous {
+    width: 20%;
+    font-size: 12px;
+  }
+  .header h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .header h5 {
+    font-size: 0.8rem;
+  }
+  .header img {
+    width: 30px;
+  }
+  .test-container {
+    height: 122vh;
+  }
+  .wrapper h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .wrapper h5 {
+    font-size: 0.8rem;
+  }
+  .wrapper img {
+    width: 35px;
+  }
+  /*Payment CSS */
+  .payment-container h2 {
+    font-size: 0.8rem;
+  }
+  .payment-container h2 .mt-5 {
+    margin-top: 1rem !important;
+  }
+  .payment-box {
+    width: 90%;
+    height: 75px;
+  }
+  .payment-box h6 {
+    font-size: 0.7rem;
+  }
+}
+/*Small devices (Ipad,small screen desktops, small screen laptops)*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 56% !important;
+  }
+  .header {
+    margin-top: 0 !important;
+  }
+  .card {
+    height: 1100px !important;
+  }
+  /*Questionair CSS */
+  legend {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+  }
+  .form-container p {
+    font-size: 17px;
+  }
+  /*Description CSS */
+  .body {
+    height: 125vh;
+    letter-spacing: 0.2px;
+  }
+
+  .main-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 17px;
+  }
+  .Description-list img {
+    width: 60px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial */
+  container,
+  .container-md {
+    max-width: 100% !important;
+  }
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .btn-col .next {
+    width: 15%;
+  }
+  .header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .header h5 {
+    font-size: 1.3rem;
+  }
+  .header img {
+    width: 40px;
+  }
+  .test-container {
+    height: 100vh;
+  }
+  .wrapper h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .wrapper h5 {
+    font-size: 1rem;
+  }
+  .wrapper img {
+    width: 40px;
+  }
+  .payment-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .payment-box {
+    width: 90%;
+    height: 75px;
+  }
+  .payment-box h6 {
+    font-size: 1rem;
+  }
+}
+
+/*Medium devices (medium screen desktops, medium screen laptops)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 49.666667% !important;
+  }
+  /*Questionair CSS */
+  legend {
+    font-size: 23px !important;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+  }
+  .form-container p {
+    font-size: 18px;
+  }
+  .body {
+    height: 120vh;
+    letter-spacing: 0.2px;
+  }
+
+  .main-container h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 18px;
+  }
+  .Description-list img {
+    width: 65px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial Css */
+  .tutorial-container .col-lgl-6 {
+    width: 95% !important;
+    height: 490px;
+  }
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-col .next {
+    width: 15%;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .wrapper h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .payment-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .payment-box {
+    width: 90%;
+    height: 75px;
+  }
+  .payment-box h6 {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (large screen desktops, large screen laptops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-xl-5 {
+    flex: 0 0 auto;
+    width: 48.666667% !important;
+  }
+  /*Questionair CSS */
+  legend {
+    font-size: 24px !important;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+  }
+  .form-container p {
+    font-size: 17px;
+    letter-spacing: 0.3px;
+  }
+  .body {
+    height: 120vh;
+    letter-spacing: 0.2px;
+  }
+
+  .main-container h1 {
+    font-size: 31px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 19px;
+  }
+  .Description-list img {
+    width: 68px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial Css */
+  .tutorial-container .col-lgl-6 {
+    width: 70% !important;
+    height: 550px;
+  }
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-col .next {
+    width: 10%;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .wrapper h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+  /*Questionair CSS */
+  legend {
+    font-size: 28px !important;
+    font-weight: 600;
+  }
+  label {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    font-size: 24px;
+  }
+  .form-container p {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+  }
+  .form-container Button {
+    font-size: 21px;
+    background-color: #bbbbbb !important;
+    border: none;
+  }
+  .form-container Button:hover:enabled {
+    background-color: #0d6efd !important;
+  }
+  /*Description CSS */
+  .body {
+    height: 120vh;
+    letter-spacing: 0.2px;
+  }
+  .body2 {
+    height: 75vh;
+  }
+
+  .main-container h1 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .main-container h3 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .main-container p {
+    font-size: 20px;
+  }
+  .Description-list img {
+    width: 75px;
+    height: 70%;
+  }
+  .Description-list h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .Description-list ol li {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  .Description-list button {
+    background-color: #bbbbbb !important;
+  }
+  .Description-list button:hover:enabled {
+    background-color: #0f80d6 !important;
+  }
+  /*Tutorial Css */
+  .tutorial-container .col-lgl-6 {
+    width: 60% !important;
+    height: 600px;
+  }
+  .btn-col {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-col .next {
+    width: 10%;
+  }
+  .btn-col .previous {
+    width: 10%;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .col-xxl-6 {
+    width: 43% !important;
+  }
+  .col-xxxl-6 {
+    width: 40%;
+    height: 600px;
+  }
+  /*Task CSS */
+  .wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
