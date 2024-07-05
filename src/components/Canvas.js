@@ -83,7 +83,7 @@ function Canvas({ imageSrc, setErrorType, setShowTutorial, errorType }) {
   var isPopupDisplayed = false;
 
   const [errorCount, setErrorCount] = useState(0);
-  console.log(errorCount);
+  //console.log(errorCount);
 
   function displayPopup(message, toggleFunction) {
     // Close any existing popup
